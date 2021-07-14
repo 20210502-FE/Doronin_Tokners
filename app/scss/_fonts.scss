@@ -1,0 +1,73 @@
+/* century-gothic-regular - latin */
+@font-face {
+    font-family: 'Century Gothic Regular';
+    font-weight: 400;
+    font-style: normal;
+    src: url('../assets/fonts/century-gothic/CenturyGothic.eot');
+    src: local(''),
+        url('../assets/fonts/century-gothic/CenturyGothic.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/century-gothic/CenturyGothic.woff2') format('woff2'),
+        url('../assets/fonts/century-gothic/CenturyGothic.woff') format('woff'),
+        url('../assets/fonts/century-gothic/CenturyGothic.ttf') format('truetype');
+}
+/* century-gothic-700 - latin */
+@font-face {
+    font-family: 'Century Gothic Bold';
+    font-weight: bold;
+    font-style: normal;
+    src: url('../assets/fonts/century-gothic/CenturyGothic-Bold.eot');
+    src: local(''),
+        url('../assets/fonts/century-gothic/CenturyGothic-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/century-gothic/CenturyGothic-Bold.woff2') format('woff2'),
+        url('../assets/fonts/century-gothic/CenturyGothic-Bold.woff') format('woff'),
+        url('../assets/fonts/century-gothic/CenturyGothic-Bold.ttf') format('truetype');
+}
+/* century-gothic-700 - latin */
+@font-face {
+    font-family: 'Century Gothic BoldI-Italic';
+    font-weight: bold;
+    font-style: italic;
+    src: url('../assets/fonts/century-gothic/CenturyGothic-BoldItalic.eot');
+    src: local(''),
+        url('../assets/fonts/century-gothic/CenturyGothic-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/century-gothic/CenturyGothic-BoldItalic.woff2') format('woff2'),
+        url('../assets/fonts/century-gothic/CenturyGothic-BoldItalic.woff') format('woff'),
+        url('../assets/fonts/century-gothic/CenturyGothic-BoldItalic.ttf') format('truetype');
+}
+
+/* azo-sans - latin */
+@font-face {
+    font-family: 'Azo Sans Regular';
+    font-weight: 400;
+    font-style: normal;
+    src: url('../assets/fonts/azo-sans/AzoSans-Regular.eot');
+    src: local(''),
+        url('../assets/fonts/azo-sans/AzoSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/azo-sans/AzoSans-Regular.woff2') format('woff2'),
+        url('../assets/fonts/azo-sans/AzoSans-Regular.woff') format('woff'),
+        url('../assets/fonts/azo-sans/AzoSans-Regular.ttf') format('truetype');
+}
+/* azo-sans-500 - latin */
+@font-face {
+    font-family: 'Azo Sans Medium';
+    font-weight: 500;
+    font-style: normal;
+    src: url('../assets/fonts/azo-sans/AzoSans-Medium.eot');
+    src: local(''),
+        url('../assets/fonts/azo-sans/AzoSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/azo-sans/AzoSans-Medium.woff2') format('woff2'),
+        url('../assets/fonts/azo-sans/AzoSans-Medium.woff') format('woff'),
+        url('../assets/fonts/azo-sans/AzoSans-Medium.ttf') format('truetype');
+}
+/* azo-sans-700 - latin */
+@font-face {
+    font-family: 'Azo Sans Bold';
+    font-weight: bold;
+    font-style: normal;
+    src: url('../assets/fonts/azo-sans/AzoSans-Bold.eot');
+    src: local(''),
+        url('../assets/fonts/azo-sans/AzoSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/azo-sans/AzoSans-Bold.woff2') format('woff2'),
+        url('../assets/fonts/azo-sans/AzoSans-Bold.woff') format('woff'),
+        url('../assets/fonts/azo-sans/AzoSans-Bold.ttf') format('truetype');
+}
