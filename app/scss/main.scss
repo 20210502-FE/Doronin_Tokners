@@ -1,3 +1,18 @@
 @import "utility/variables";
 @import "utility/mixins";
 @import "fonts";
+
+@import "base/base";
+@import "base/layout";
+
+@import "modules/header";
+@import "modules/bottom-nav";
+@import "modules/footer";
+@import "modules/navigation";
+
+@import "pages/main/banner-top";
+@import "pages/main/cards";
+@import "pages/main/difference";
+@import "pages/main/coming";
+@import "pages/main/details";
+@import "pages/main/buy";

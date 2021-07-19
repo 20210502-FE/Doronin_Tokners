@@ -1,0 +1,153 @@
+.team {
+    padding-top: 191px;
+    padding-bottom: 196px;
+
+    @include respond-to(phone-only) {
+        padding-top: 129px;
+        padding-bottom: 64px;
+    }
+
+    &__title {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    &__wrapper {
+        margin-bottom: 36px;
+
+        @include respond-to(phone-only) {
+            margin-bottom: 30px;
+        }
+
+        &-button {
+            @include respond-to(phone-only) {
+                display: none;
+            }
+        }
+    }
+
+    &__box {
+        margin-left: 173px;
+
+        @include respond-to(phone-only) {
+            margin-left: 10px;
+        }
+    }
+
+    &__inner {
+        margin-left: -10px;
+
+        @include respond-to(phone-only) {
+            margin-left: -5px;
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+            scroll-behavior: smooth;
+        }
+    }
+
+    &__cards {
+        padding-left: 10px;
+
+        @include respond-to(phone-only) {
+            padding-left: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__column {
+        padding: 40px 0 0 40px;
+        width: 378px;
+        height: 560px;
+        background: $color-cinder;
+        border-radius: 25px;
+
+        @include respond-to(phone-only) {
+            padding: 30px 0 0 30px;
+            width: 335px;
+            height: 510px;
+        }
+
+        &_second {
+            background-image: url(../assets/images/lee-lee-bg-image.png);
+            position: relative;
+            z-index: -1;
+        }
+
+        &_trimmed {
+            width: 153px;
+            border-top-right-radius: unset;
+
+            @include respond-to(phone-only) {
+                display: none;
+            }
+        }
+    }
+
+    &__name {
+        font-family: $font-gothic-bold, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        color: $color-white;
+        margin-bottom: 6px;
+    }
+
+    &__position {
+        font-family: $font-gothic-regular, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: $color-white;
+        margin-bottom: 55px;
+
+        @include respond-to(phone-only) {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__image {
+        width: 257px;
+        height: 419.5px;
+        margin-left: 21px;
+
+        @include respond-to(phone-only) {
+            width: 236px;
+            height: 384.5px;
+            margin-left: 20px;
+        }
+
+        &_trimmed {
+            width: 92px;
+
+            @include respond-to(phone-only) {
+                display: none;
+            }
+        }
+    }
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    position: relative;
+
+    &:after {
+        content: "";
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        border: 2px solid $color-white;
+        opacity: 0.05;
+        position: absolute;
+        top: -19px;
+        left: -18px;
+    }
+
+    &_left {
+        margin-right: 42px;
+    }
+}

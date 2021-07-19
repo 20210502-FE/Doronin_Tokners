@@ -1,0 +1,133 @@
+.buy {
+    padding-bottom: 270px;
+
+    @include respond-to(phone-only) {
+        padding-bottom: 64px;
+    }
+
+    &__desc {
+        color: $color-whisper;
+        text-align: center;
+        margin-top: -30px;
+        margin-bottom: 50px;
+
+        @include respond-to(phone-only) {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__wrapper {
+        margin: 0 -10px;
+    }
+
+    &__inner {
+        padding: 0 10px;
+        position: relative;
+
+        @include respond-to(phone-only) {
+            margin-top: 10px;
+        }
+
+        &:before {
+            content: "";
+            font-size: 12px;
+            line-height: 24px;
+            color: $color-white;
+            opacity: 0.3;
+            position: absolute;
+            top: 30px;
+            left: 40px;
+
+            @include respond-to(phone-only) {
+                top: 50px;
+            }
+        }
+
+        &_before-01 {
+            &::before {
+                content: "01";
+            }
+        }
+
+        &_before-02 {
+            &::before {
+                content: "02";
+            }
+        }
+
+        &_before-03 {
+            &::before {
+                content: "03";
+            }
+        }
+
+        &:hover {
+            transform: translateY(60px);
+            transition: 1s;
+            z-index: 1;
+
+            @include respond-to(phone-only) {
+                display: none;
+            }
+        }
+    }
+
+    &__column {
+        width: 511px;
+        height: 270px;
+        padding: 99px 0;
+        background: #171b29;
+        border-radius: 25px;
+
+        @include respond-to(phone-only) {
+            width: 335px;
+            height: 216px;
+            padding: 94px 0 50px 30px;
+        }
+    }
+
+    &__text {
+        font-family: $font-gothic-bold, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        color: $color-white;
+        opacity: unset;
+        width: 246px;
+        margin: 0 auto;
+
+        @include respond-to(phone-only) {
+            font-size: 18px;
+            width: 262px;
+            margin: 0;
+        }
+
+        &_short {
+            width: 240px;
+
+            @include respond-to(phone-only) {
+                width: 256px;
+            }
+        }
+    }
+
+    &__circle {
+        width: 86px;
+        height: 86px;
+        background-color: $color-vulcan;
+        border-radius: 50%;
+        position: absolute;
+        right: -45px;
+        bottom: 63px;
+        z-index: 1;
+
+        @include respond-to(phone-only) {
+            width: 60px;
+            height: 60px;
+            right: 150px;
+            bottom: -35px;
+        }
+    }
+}

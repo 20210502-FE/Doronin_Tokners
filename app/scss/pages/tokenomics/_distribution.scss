@@ -1,0 +1,125 @@
+.distribution {
+    padding-top: 200px;
+    padding-bottom: 22px;
+
+    @include respond-to(phone-only) {
+        padding-top: 129px;
+        padding-bottom: 9px;
+        position: relative;
+    }
+
+    &__title {
+        font-size: 36px;
+        line-height: 42px;
+        width: 378px;
+        margin-right: 85px;
+
+        @include respond-to(phone-only) {
+            font-size: 32px;
+            line-height: 36px;
+            width: 313px;
+            margin-right: 0;
+        }
+    }
+
+    &__wrapper {
+        margin-bottom: 24.5px;
+
+        @include respond-to(phone-only) {
+            margin-bottom: 20.5px;
+        }
+    }
+
+    &__inner {
+        margin-top: 73px;
+
+        @include respond-to(phone-only) {
+            margin-top: 14px;
+        }
+    }
+
+    &__desc {
+        font-size: 24px;
+        letter-spacing: -0.02em;
+
+        @include respond-to(phone-only) {
+            font-size: 16px;
+            line-height: 20px;
+            width: 216px;
+        }
+
+        &_end {
+            text-align: right;
+        }
+
+        &_small {
+            font-size: 20px;
+
+            @include respond-to(phone-only) {
+                font-size: 14px;
+                line-height: 16px;
+                width: auto;
+            }
+        }
+
+        &_width-auto {
+            @include respond-to(phone-only) {
+                width: auto;
+            }
+        }
+    }
+
+    &__number {
+        @include respond-to(phone-only) {
+            margin-top: 8px;
+            margin-bottom: 15.7px;
+        }
+    }
+
+    &__column {
+        position: relative;
+
+        &_left {
+            margin-top: 20px;
+
+            @include respond-to(phone-only) {
+                margin-left: auto;
+                margin-bottom: 20.5px;
+            }
+        }
+
+        &_center {
+            @include respond-to(phone-only) {
+                order: 1;
+            }
+        }
+
+        &-bg-image {
+            background-image: url(../assets/images/distribution-bg-image-3x.png);
+            width: 897px;
+            height: 510px;
+            filter: blur(50px);
+            position: absolute;
+            left: -50px;
+            bottom: -22px;
+            z-index: -1;
+
+            @include respond-to(phone-only) {
+                background-image: url(../assets/images/distribution-bg-image.png);
+                width: 360.11px;
+                height: 180.26px;
+                filter: blur(20.073px);
+                left: -30px;
+                bottom: -9px;
+            }
+        }
+
+        &_right {
+            align-self: center;
+
+            @include respond-to(phone-only) {
+                margin-bottom: 55.5px;
+            }
+        }
+    }
+}

@@ -1,0 +1,326 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100%;
+    position: relative;
+    overflow-x: hidden;
+    background-color: $color-vulcan;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    max-width: calc(100% - 346px);
+    margin: 0 auto;
+
+    @include respond-to(phone-only) {
+        max-width: calc(100% - 40px);
+    }
+}
+
+.item {
+    padding: 13px 0;
+    width: 147px;
+    text-align: center;
+
+    @include respond-to(phone-only) {
+        padding: 0;
+        width: auto;
+    }
+
+    &_border {
+        border: 2px solid $color-green;
+        border-radius: 52px;
+
+        @include respond-to(phone-only) {
+            border: none;
+            border-radius: 0;
+        }
+    }
+}
+
+.link {
+    font-family: $font-gothic-bold, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color-white;
+
+    @include respond-to(phone-only) {
+        font-size: 10px;
+        line-height: 10px;
+    }
+
+    &_green {
+        text-decoration-line: underline;
+        color: $color-green;
+        display: flex;
+        align-items: center;
+
+        &:after {
+            content: url("../assets/icons/arrow-right-green-icon.png");
+            width: 16px;
+            height: 16px;
+            margin-left: 6px;
+        }
+    }
+
+    &_mariner {
+        text-decoration-line: underline;
+        color: $color-mariner;
+        display: flex;
+        align-items: center;
+
+        &:after {
+            content: url("../assets/icons/arrow-right-mariner-icon.png");
+            width: 16px;
+            height: 16px;
+            margin-left: 6px;
+        }
+    }
+}
+
+.text {
+    font-family: $font-gothic-regular, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-fog;
+    opacity: 0.6;
+
+    @include respond-to(phone-only) {
+        font-size: 14px;
+    }
+
+    &_width-530 {
+        max-width: 530px;
+    }
+
+    &_text-align-center {
+        text-align: center;
+    }
+
+    &_color-vulcan {
+        color: $color-vulcan;
+    }
+
+    &_color-black {
+        color: $color-black;
+    }
+
+    &_color-white {
+        color: $color-white;
+    }
+
+    &_color-gray {
+        color: $color-gray;
+    }
+
+    &_mar-bot-30 {
+        margin-bottom: 30px;
+    }
+
+    &_mar-bot-20 {
+        margin-bottom: 20px;
+    }
+
+    &_phone-only {
+        opacity: unset;
+
+        @include respond-to(phone-only) {
+            background: linear-gradient(360deg, $color-vulcan 0%, $color-white 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transform: matrix(1, 0, 0, -1, 0, 0);
+        }
+    }
+
+    &_bold {
+        font-family: $font-gothic-bold, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+    }
+
+    &_italic-bold {
+        font-family: $font-gothic-bold-italic, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+    }
+
+    &_before {
+        &:before {
+            content: "“";
+            font-family: $font-gothic-bold, sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 24px;
+            color: $color-gold;
+            margin-right: 14px;
+        }
+    }
+
+    &_small {
+        @include respond-to(phone-only) {
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}
+
+.title {
+    font-family: $font-gothic-bold, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 54px;
+    letter-spacing: -0.02em;
+    color: $color-white;
+
+    @include respond-to(phone-only) {
+        font-size: 36px;
+        line-height: 40px;
+    }
+}
+
+.bg-image {
+    position: absolute;
+    right: 0;
+    z-index: -2;
+
+    &_top {
+        top: 0;
+
+        @include respond-to(phone-only) {
+            left: 0;
+        }
+    }
+
+    &_bottom {
+        bottom: 0;
+
+        @include respond-to(phone-only) {
+            display: none;
+        }
+    }
+
+    &_short {
+        left: 220px;
+        right: auto;
+    }
+}
+
+.desc {
+    font-family: $font-gothic-bold, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    color: $color-white;
+
+    @include respond-to(phone-only) {
+        font-size: 28px;
+    }
+}
+
+.icon-wrapper {
+    width: 120px;
+    height: 120px;
+    position: relative;
+}
+
+.arrow {
+    display: inline-block;
+    padding: 4px;
+    position: absolute;
+    background-color: transparent;
+    top: 38px;
+    left: 36px;
+
+    @include respond-to(phone-only) {
+        top: 25px;
+        left: 25px;
+    }
+
+    &_right {
+        transform: rotate(-45deg);
+
+        @include respond-to(phone-only) {
+            transform: rotate(45deg);
+        }
+    }
+
+    &_green {
+        border: solid $color-green;
+        border-width: 0 3px 3px 0;
+    }
+
+    &_gold {
+        border: solid $color-gold;
+        border-width: 0 3px 3px 0;
+    }
+}
+
+.bg-picture {
+    width: 100%;
+    height: 1374px;
+    position: absolute;
+    z-index: -1;
+}
+
+.number {
+    font-family: $font-gothic-bold, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 96px;
+    letter-spacing: -0.02em;
+
+    @include respond-to(phone-only) {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    &_small {
+        font-size: 48px;
+        line-height: 1;
+
+        @include respond-to(phone-only) {
+            font-size: 36px;
+        }
+    }
+
+    &_gold {
+        color: $color-gold;
+    }
+
+    &_mariner {
+        color: $color-mariner;
+    }
+
+    &_red {
+        color: $color-red;
+    }
+
+    &_green {
+        color: $color-green;
+    }
+}
