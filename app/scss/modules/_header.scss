@@ -1,0 +1,44 @@
+.header {
+    position: absolute;
+    top: 36px;
+    left: 40px;
+    right: 40px;
+    z-index: 1;
+
+    @include respond-to(phone-only) {
+        top: 49px;
+        left: 20px;
+        right: 20px;
+    }
+
+    &__picture {
+        @include respond-to(phone-only) {
+            max-height: 25px;
+        }
+    }
+
+    &__nav-toggle {
+        margin-left: 79px;
+
+        @include respond-to(phone-only) {
+            margin-left: 0;
+        }
+    }
+
+    &__nav-item {
+        margin-right: 30px;
+
+        @include respond-to(phone-only) {
+            margin-left: 10px;
+            margin-right: 0;
+        }
+    }
+
+    &__inner {
+        width: 90%;
+
+        @include respond-to(phone-only) {
+            width: 50%;
+        }
+    }
+}

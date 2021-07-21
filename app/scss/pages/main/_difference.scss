@@ -1,0 +1,77 @@
+.difference {
+    min-height: 800px;
+
+    &__image {
+        background-image: url(../assets/images/difference-image-3x.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50%;
+        height: 798.5px;
+
+        @include respond-to(phone-only) {
+            background-image: url(../assets/images/difference-image.png);
+            height: 312.45px;
+            width: 100%;
+        }
+    }
+
+    &__wrapper {
+        background-image: url(../assets/images/difference-white-image-3x.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50%;
+        height: 798.5px;
+        position: relative;
+
+        @include respond-to(phone-only) {
+            background-image: url(../assets/images/difference-white-image.png);
+            width: 100%;
+            height: 646px;
+        }
+
+        &:after {
+            content: "";
+            background-image: url(../assets/images/coming-vector.png);
+            width: 278px;
+            height: 287px;
+            position: absolute;
+            right: 0;
+            bottom: -286px;
+
+            @include respond-to(phone-only) {
+                display: none;
+            }
+        }
+    }
+
+    &__inner {
+        padding: 296px 234px 130px 143px;
+
+        @include respond-to(phone-only) {
+            padding: 70px 20px;
+        }
+    }
+
+    &__title {
+        color: $color-vulcan;
+        letter-spacing: 0;
+        margin-bottom: 30px;
+
+        @include respond-to(phone-only) {
+            width: 260px;
+        }
+    }
+
+    &__text {
+        font-family: $font-gothic-bold, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 20px;
+        margin-bottom: 30px;
+
+        @include respond-to(phone-only) {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+    }
+}

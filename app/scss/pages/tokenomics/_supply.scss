@@ -1,0 +1,145 @@
+.supply {
+    padding-top: 181px;
+    padding-bottom: 267px;
+    position: relative;
+
+    @include respond-to(phone-only) {
+        padding-top: 119px;
+        padding-bottom: 144px;
+    }
+
+    &__picture {
+        top: -17px;
+
+        @include respond-to(phone-only) {
+            top: 0;
+        }
+    }
+
+    &__inner {
+        margin-top: -40px;
+
+        @include respond-to(phone-only) {
+            margin-top: -20px;
+        }
+    }
+
+    &__cards {
+        padding-top: 40px;
+
+        @include respond-to(phone-only) {
+            padding-top: 20px;
+        }
+    }
+
+    &__column {
+        padding: 95px 0 77px;
+        width: 1042px;
+        height: 469.21px;
+        background: $color-white;
+        border-radius: 25px;
+
+        @include respond-to(phone-only) {
+            padding: 33px 0 12px;
+            width: 335px;
+            height: 246px;
+        }
+
+        &_top {
+            margin-left: auto;
+
+            @include respond-to(phone-only) {
+                margin-left: 0;
+            }
+        }
+
+        &_bottom {
+            padding: 82px 0 87px;
+
+            @include respond-to(phone-only) {
+                padding: 33px 0 31px;
+            }
+        }
+    }
+
+    &__content {
+        width: 648px;
+        margin: 0 auto;
+
+        @include respond-to(phone-only) {
+            width: 270px;
+        }
+
+        &_bottom {
+            width: 596px;
+
+            @include respond-to(phone-only) {
+                width: 270px;
+            }
+        }
+    }
+
+    &__text {
+        font-family: $font-gothic-bold, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: $color-vulcan;
+        margin-bottom: 40px;
+
+        @include respond-to(phone-only) {
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 20px;
+        }
+
+        &_mar-bot-30 {
+            margin-bottom: 30px;
+
+            @include respond-to(phone-only) {
+                margin-bottom: 18px;
+            }
+        }
+    }
+
+    &__desc {
+        font-family: $font-gothic-regular, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        letter-spacing: -0.02em;
+        color: $color-vulcan;
+
+        &_end {
+            text-align: right;
+        }
+
+        &_small {
+            font-size: 20px;
+
+            @include respond-to(phone-only) {
+                font-size: 14px;
+                line-height: 28px;
+            }
+        }
+
+        &_mar-bot-20 {
+            margin-bottom: 20px;
+
+            @include respond-to(phone-only) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    &__number {
+        @include respond-to(phone-only) {
+            font-size: 40px;
+            line-height: 40px;
+            text-align: center;
+        }
+    }
+}

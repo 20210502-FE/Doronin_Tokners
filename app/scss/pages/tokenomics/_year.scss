@@ -1,0 +1,199 @@
+.year {
+    padding-top: 148px;
+    padding-bottom: 0;
+
+    @include respond-to(phone-only) {
+        padding-top: 54px;
+        padding-bottom: 10px;
+    }
+
+    &__inner {
+        margin: 0 -9.5px;
+        margin-top: -20.5px;
+
+        @include respond-to(phone-only) {
+            margin: 0 -4.5px;
+            margin-top: -10px;
+        }
+    }
+
+    &__cards {
+        padding: 0 9.5px;
+        padding-top: 20.5px;
+
+        @include respond-to(phone-only) {
+            padding: 0 4.5px;
+            padding-top: 10px;
+        }
+    }
+
+    &__column {
+        padding: 25px 25px 23px 62px;
+        width: 246px;
+        height: 175.33px;
+        background: $color-mirage;
+        border-radius: 25px;
+        position: relative;
+
+        @include respond-to(phone-only) {
+            padding: 20px 32px 16px 20px;
+            width: 163px;
+            height: 137px;
+        }
+
+        &_big {
+            @include respond-to(phone-only) {
+                padding: 20px 23px 19px 20px;
+                width: 163px;
+                height: 167px;
+            }
+        }
+    }
+
+    &__text {
+        font-family: $font-gothic-regular, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 34px;
+        color: $color-white;
+        opacity: 0.7;
+
+        @include respond-to(phone-only) {
+            font-size: 12px;
+        }
+
+        &_bold {
+            font-family: $font-gothic-bold, sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            opacity: unset;
+            margin-bottom: 6px;
+
+            @include respond-to(phone-only) {
+                margin-bottom: 11px;
+            }
+        }
+
+        &_big {
+            font-size: 20px;
+
+            @include respond-to(phone-only) {
+                font-size: 15px;
+            }
+        }
+
+        &_small {
+            line-height: 26px;
+        }
+
+        &_mar-top-9 {
+            margin-top: 9px;
+
+            @include respond-to(phone-only) {
+                margin-top: 1px;
+            }
+        }
+
+        &_mar-top-20 {
+            margin-top: 20px;
+
+            @include respond-to(phone-only) {
+                margin-top: 7px;
+            }
+        }
+
+        &_green {
+            color: $color-green;
+
+            @include respond-to(phone-only) {
+                margin-left: 32px;
+            }
+
+            &::before {
+                content: url(../assets/icons/ellipse-green-small-icon.png);
+                position: absolute;
+                top: 19px;
+                left: 0;
+
+                @include respond-to(phone-only) {
+                    top: 15px;
+                    left: -5px;
+                }
+            }
+        }
+
+        &_gold {
+            color: $color-gold;
+
+            @include respond-to(phone-only) {
+                margin-left: 32px;
+            }
+
+            &::before {
+                content: url(../assets/icons/ellipse-gold-small-icon.png);
+                position: absolute;
+                top: 19px;
+                left: 0;
+
+                @include respond-to(phone-only) {
+                    top: 15px;
+                    left: -5px;
+                }
+            }
+        }
+
+        &_denim {
+            color: $color-denim;
+
+            @include respond-to(phone-only) {
+                margin-left: 32px;
+            }
+
+            &::before {
+                content: url(../assets/icons/ellipse-denim-small-icon.png);
+                position: absolute;
+                top: 19px;
+                left: 0;
+
+                @include respond-to(phone-only) {
+                    top: 15px;
+                    left: -5px;
+                }
+            }
+        }
+
+        &_red {
+            color: $color-red;
+
+            @include respond-to(phone-only) {
+                margin-left: 32px;
+            }
+
+            &::before {
+                content: url(../assets/icons/ellipse-red-small-icon.png);
+                position: absolute;
+                top: 19px;
+                left: 0;
+
+                @include respond-to(phone-only) {
+                    top: 15px;
+                    left: -5px;
+                }
+            }
+        }
+    }
+
+    &__days {
+        font-family: $font-gothic-bold, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        color: $color-white;
+
+        @include respond-to(phone-only) {
+            font-size: 14px;
+        }
+    }
+}

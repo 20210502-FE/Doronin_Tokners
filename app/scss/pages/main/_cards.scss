@@ -1,0 +1,128 @@
+.cards {
+    padding-top: 63px;
+    padding-bottom: 214px;
+
+    @include respond-to(phone-only) {
+        padding-top: 0;
+        padding-bottom: 60px;
+    }
+
+    &__inner {
+        margin: 0 -10px;
+
+        @include respond-to(phone-only) {
+            margin: -10px -10px;
+            justify-content: space-evenly;
+        }
+    }
+
+    &__column {
+        padding: 0 10px;
+
+        @include respond-to(phone-only) {
+            padding: 10px 10px;
+        }
+
+        &:hover {
+            transform: translateY(94px);
+            transition: 1s;
+
+            @include respond-to(phone-only) {
+                display: none;
+            }
+        }
+    }
+
+    &__content {
+        padding: 60px 70px 55px 70px;
+        width: 777px;
+        height: 436px;
+        background: $color-mirage;
+        border-radius: 25px;
+
+        &_small {
+            @include respond-to(phone-only) {
+                height: 420px;
+            }
+        }
+
+        &_big {
+            @include respond-to(phone-only) {
+                height: 540px;
+            }
+        }
+
+        @include respond-to(phone-only) {
+            padding: 30px 26px 41px 30px;
+            width: 335px;
+        }
+    }
+
+    &__elipse {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        position: relative;
+        margin-bottom: 20px;
+
+        @include respond-to(phone-only) {
+            margin-bottom: 10px;
+        }
+
+        &_green {
+            background-color: $color-green;
+            box-shadow: 0px 15px 25px rgba(34, 167, 93, 0.25);
+
+            &:after {
+                content: url("../assets/icons/crown-icon.png");
+                width: 24px;
+                height: 24px;
+                position: absolute;
+                top: 23px;
+                left: 23px;
+            }
+        }
+
+        &_mariner {
+            background-color: $color-mariner;
+            box-shadow: 0px 15px 25px rgba(34, 120, 212, 0.25);
+
+            &:after {
+                content: url("../assets/icons/star-icon.png");
+                width: 24px;
+                height: 24px;
+                position: absolute;
+                top: 23px;
+                left: 23px;
+            }
+        }
+    }
+
+    &__desc {
+        text-decoration: underline;
+
+        &_green {
+            color: $color-green;
+        }
+
+        &_mariner {
+            color: $color-mariner;
+        }
+    }
+
+    &__text {
+        color: $color-white;
+        opacity: 0.5;
+        margin-top: 20px;
+        margin-bottom: 68px;
+
+        &_mar-bot-20 {
+            margin-bottom: 20px;
+        }
+
+        @include respond-to(phone-only) {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+    }
+}

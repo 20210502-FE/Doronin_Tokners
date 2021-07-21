@@ -1,0 +1,161 @@
+.details {
+    padding-top: 400px;
+    padding-bottom: 220px;
+    position: relative;
+    font-family: $font-gothic-bold, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+
+    @include respond-to(phone-only) {
+        padding-top: 105px;
+        padding-bottom: 109px;
+    }
+
+    &__picture {
+        top: -67px;
+
+        @include respond-to(phone-only) {
+            height: 768px;
+            top: 0;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 20px;
+
+        @include respond-to(phone-only) {
+            line-height: 54px;
+            margin-bottom: 17px;
+        }
+    }
+
+    &__wrapper {
+        margin: 0 -10px;
+
+        @include respond-to(phone-only) {
+            margin: 0 -5px;
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+            scroll-behavior: smooth;
+        }
+    }
+
+    &__inner {
+        padding: 0 10px;
+
+        @include respond-to(phone-only) {
+            padding: 0 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &:hover {
+            transform: translateY(60px);
+            transition: 1s;
+
+            @include respond-to(phone-only) {
+                display: none;
+            }
+        }
+    }
+
+    &__column {
+        width: 511px;
+        height: 585px;
+        padding: 110px 0 87px;
+        background-color: $color-white;
+        border-radius: 25px;
+        position: relative;
+
+        @include respond-to(phone-only) {
+            width: 335px;
+            height: 445px;
+            padding: 57px 0 54px;
+        }
+    }
+
+    &__number {
+        width: 250px;
+        height: 210px;
+        position: absolute;
+
+        @include respond-to(phone-only) {
+            width: 180px;
+            height: 130px;
+        }
+    }
+
+    &__icon-wrapper {
+        margin-bottom: 40px;
+
+        @include respond-to(phone-only) {
+            margin-bottom: 5px;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 28px;
+            right: 45px;
+            font-family: $font-gothic-bold, sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 26px;
+            line-height: 36px;
+            text-align: center;
+            color: $color-vulcan;
+        }
+
+        &_green {
+            &:after {
+                content: "01";
+            }
+        }
+
+        &_mariner {
+            &:after {
+                content: "02";
+            }
+        }
+
+        &_gold {
+            &:after {
+                content: "03";
+            }
+        }
+    }
+
+    &__subtitle {
+        font-size: 32px;
+        line-height: 54px;
+        color: $color-shark;
+        margin-bottom: 9px;
+
+        @include respond-to(phone-only) {
+            margin-bottom: 4px;
+        }
+    }
+
+    &__desc {
+        font-size: 16px;
+        line-height: 20px;
+        color: $color-shark;
+        opacity: 0.8;
+
+        &_big {
+            font-size: 20px;
+            margin-top: 70px;
+            margin-bottom: 20px;
+
+            @include respond-to(phone-only) {
+                margin-top: 35px;
+            }
+        }
+
+        &_mar-bot-10 {
+            margin-bottom: 10px;
+        }
+    }
+}

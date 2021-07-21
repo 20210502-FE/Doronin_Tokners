@@ -1,0 +1,371 @@
+.coming {
+    padding-top: 210px;
+    position: relative;
+
+    @include respond-to(phone-only) {
+        padding-top: 30px;
+        padding-bottom: 43px;
+    }
+
+    &__wrapper {
+        margin: 0 -12px;
+
+        @include respond-to(phone-only) {
+            margin: 0 -5px;
+        }
+    }
+
+    &__inner {
+        padding: 0 12px;
+
+        @include respond-to(phone-only) {
+            margin-top: 40px;
+            padding: 0 5px;
+        }
+    }
+
+    &__column {
+        width: 370px;
+        height: 304px;
+
+        @include respond-to(phone-only) {
+            height: auto;
+            width: 350px;
+        }
+
+        &_short {
+            max-width: 350px;
+        }
+    }
+
+    &__icon-wrapper {
+        &:after {
+            content: "";
+            position: absolute;
+            top: 28px;
+            right: 42px;
+            font-family: $font-gothic-bold, sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 26px;
+            line-height: 36px;
+            text-align: center;
+            color: $color-vulcan;
+        }
+
+        &_green {
+            &:after {
+                content: "Q1";
+            }
+        }
+
+        &_mariner {
+            &:after {
+                content: "Q2";
+            }
+        }
+
+        &_gold {
+            &:after {
+                content: "Q3";
+            }
+        }
+
+        &_red {
+            &:after {
+                content: "Q4";
+            }
+        }
+    }
+
+    &__year {
+        font-family: $font-gothic-bold, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 36px;
+        color: $color-white;
+        margin-top: 30px;
+        position: relative;
+
+        &:after {
+            content: "";
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            position: absolute;
+            top: -10px;
+            right: 29px;
+        }
+
+        &_green {
+            &:after {
+                background-color: $color-green;
+            }
+        }
+
+        &_mariner {
+            &:after {
+                background-color: $color-mariner;
+            }
+        }
+
+        &_gold {
+            &:after {
+                background-color: $color-gold;
+            }
+        }
+
+        &_red {
+            &:after {
+                background-color: $color-red;
+            }
+        }
+    }
+
+    &__box {
+        margin-top: 15px;
+
+        &_mg-top {
+            margin-top: 20px;
+        }
+    }
+
+    &__text {
+        font-family: $font-gothic-regular, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 34px;
+        color: $color-white;
+        opacity: 0.7;
+        margin-left: 21px;
+
+        @include respond-to(phone-only) {
+            margin-left: 11px;
+            font-size: 16px;
+        }
+
+        &_compressed {
+            line-height: 20px;
+
+            &:nth-child(2n) {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    &__numbers {
+        font-family: $font-sans-bold, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 34px;
+
+        &_compressed {
+            line-height: 25px;
+
+            &:nth-child(2n) {
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+        }
+
+        &_green {
+            color: $color-green;
+        }
+
+        &_mariner {
+            color: $color-mariner;
+        }
+
+        &_gold {
+            color: $color-gold;
+        }
+
+        &_red {
+            color: $color-red;
+        }
+    }
+
+    &__holder {
+        margin: 187px -20px 0 -20px;
+
+        @include respond-to(phone-only) {
+            margin-top: 80px;
+            justify-content: space-evenly;
+        }
+    }
+
+    &__card {
+        padding: 0 20px;
+
+        &_left {
+            @include respond-to(phone-only) {
+                order: 2;
+                margin-top: 114px;
+            }
+        }
+
+        &_right {
+            @include respond-to(phone-only) {
+                order: 1;
+            }
+        }
+    }
+
+    &__content {
+        width: 644px;
+        height: 908px;
+
+        @include respond-to(phone-only) {
+            width: 335px;
+            height: auto;
+        }
+
+        &_right {
+            width: 777px;
+            height: 900px;
+
+            @include respond-to(phone-only) {
+                width: 335px;
+                height: 337px;
+            }
+        }
+    }
+
+    &__title {
+        letter-spacing: unset;
+        margin-bottom: 30px;
+        position: relative;
+
+        @include respond-to(phone-only) {
+            line-height: 54px;
+            margin-bottom: 20px;
+        }
+
+        &_phone-only {
+            display: none;
+
+            @include respond-to(phone-only) {
+                display: inline-block;
+                position: relative;
+
+                &:before {
+                    content: url(../assets/icons/coming-icon.png);
+                    margin-right: 24px;
+                    position: absolute;
+                    top: -50px;
+                }
+            }
+        }
+
+        &_dekstop {
+            &:before {
+                content: url(../assets/icons/coming-icon-3x.png);
+                margin-right: 24px;
+            }
+
+            @include respond-to(phone-only) {
+                display: none;
+            }
+        }
+    }
+
+    &__item {
+        @include respond-to(phone-only) {
+            text-align: left;
+        }
+
+        &_phone-only {
+            @include respond-to(phone-only) {
+                font-family: $font-gothic-bold, sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 22px;
+                border-bottom: 1px dashed $color-green;
+                color: $color-green;
+                padding: 0;
+                width: auto;
+            }
+        }
+    }
+
+    &__item-dekstop {
+        @include respond-to(phone-only) {
+            display: none;
+        }
+    }
+
+    &__link {
+        @include respond-to(phone-only) {
+            font-size: 18px;
+            line-height: 22px;
+            border-bottom: 1px dashed $color-green;
+            color: $color-green;
+            text-align: left;
+        }
+    }
+
+    &__bg-image {
+        background-color: $color-mirage;
+        border-radius: 25px;
+        width: 777px;
+        height: 900px;
+        margin-top: 16px;
+        position: relative;
+
+        @include respond-to(phone-only) {
+            width: 292px;
+            height: 338px;
+            margin-top: 0;
+            margin-left: auto;
+        }
+    }
+
+    &__picture {
+        width: 891px;
+        height: 918px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        @include respond-to(phone-only) {
+            width: 328px;
+            height: 343px;
+            right: 5px;
+        }
+    }
+
+    &__label-show {
+        display: none;
+
+        @include respond-to(phone-only) {
+            display: inline-block;
+        }
+    }
+
+    &__text-wrapper {
+        input {
+            display: none;
+
+            @include respond-to(phone-only) {
+                &:checked {
+                    & + label {
+                        & > .text-wrapper {
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.text-wrapper {
+    @include respond-to(phone-only) {
+        display: none;
+    }
+}
