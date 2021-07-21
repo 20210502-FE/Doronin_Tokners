@@ -35,10 +35,10 @@
     }
 
     &__inner {
-        margin-left: -10px;
+        margin-left: -20px;
 
         @include respond-to(phone-only) {
-            margin-left: -5px;
+            margin-left: -10px;
             flex-wrap: nowrap;
             overflow-x: scroll;
             scroll-behavior: smooth;
@@ -46,10 +46,10 @@
     }
 
     &__cards {
-        padding-left: 10px;
+        padding-left: 20px;
 
         @include respond-to(phone-only) {
-            padding-left: 5px;
+            padding-left: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -111,12 +111,12 @@
 
     &__image {
         width: 257px;
-        height: 419.5px;
+        height: 421px;
         margin-left: 21px;
 
         @include respond-to(phone-only) {
             width: 236px;
-            height: 384.5px;
+            height: 385px;
             margin-left: 20px;
         }
 
